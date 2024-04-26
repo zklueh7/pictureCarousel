@@ -35,7 +35,7 @@ import Card from "./Card";
       <h1>{title}</h1>
       <div className="Carousel-main">
         <i
-          className="bi bi-arrow-right-circle"
+          className="bi bi-arrow-left-circle"
           onClick={goForward}
         />
         <Card
@@ -44,10 +44,10 @@ import Card from "./Card";
           currNum={currCardIdx + 1}
           totalNum={total}
         />
-        <i
-          className="bi bi-arrow-left-circle"
+          <i
+          className="bi bi-arrow-right-circle"
           onClick={goBackward}
-        />
+          />
       </div>
     </div>
   );
